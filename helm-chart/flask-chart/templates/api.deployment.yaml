@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name }}
+spec:
+  replicas: {{ .Values.deployment.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.label.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.label.name }}
+    spec:
+      containers:
+        - name: {{ lower .Values.arbitraryname.containerName }}
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          args: ["gunicorn", "-w 1", "app:app", "-b 0.0.0.0:5000"]
+          {{- include "ContainerPortHERE" . | indent 10 }}
+          env:
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: api-config
+                  key: redis.host
+

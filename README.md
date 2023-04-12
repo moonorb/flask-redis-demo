@@ -20,7 +20,7 @@ cd app
 podman build -t docker.io/moonorb/flask-redis:v3
 podman images
 podman push docker.io/moonorb/flask-redis:v3
-
+```
 
 
 

@@ -1,12 +1,6 @@
-# Flask-Redis Deployment
+# Flask-Redis Helm Chart
 
 ![Alt text](https://gitlab.com/moonorb/demo/-/raw/main/images/chart_diagram.PNG )
-
-
-```
-
-This is a super simple demo application to practice and experiment with K8s.
-This repo will utilize Helm Charts.
 
 - **flask-chart - Parent chart**
 - **redis-chart - Subchart(child)**
@@ -27,7 +21,7 @@ Check what will be deployed before running installation
 helm template flask-chart
 ```
 
-Deploy the chart and check
+Deploy and check the charts
 ```
 helm install my-flask flask-chart -n flask
 helm list

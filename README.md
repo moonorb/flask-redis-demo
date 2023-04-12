@@ -13,7 +13,8 @@ kubectl create ns flask
 kubectl create -f flask-redis-demo -n flask
 ```
 
-In case you want to build the image yourself
+
+Building the image
 ```
 cd app
 podman build -t docker.io/moonorb/flask-redis:v3

@@ -23,6 +23,7 @@ helm template flask-chart
 
 Deploy and check the charts
 ```
+kubectl create ns flask
 helm install my-flask flask-chart -n flask
 helm list
 ```

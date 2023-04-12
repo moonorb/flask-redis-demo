@@ -1,0 +1,22 @@
+deployment: 
+  name: front-api
+  replicaCount: 1
+label:
+  name: front-api
+
+arbitraryname:
+  containerName: FRONT-API-CONTAINER
+
+ingress:
+  hosts: 
+    - host: flask.moon.cloud
+      paths:
+        - path: /
+
+
+image: 
+  repository: moonorb/flask-redis
+  tag: v3
+
+ContainerPortNumber: 5000
+

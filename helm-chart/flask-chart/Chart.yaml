@@ -1,0 +1,10 @@
+apiVersion: v2
+name: flask-chart
+description: Helm Chart for Flask-Goal is to experiment with Helm
+type: application
+version: 0.2.0   #Helm Chart Version
+appVersion: "1.1.0"
+dependencies:
+  - name: redis-chart
+    version: 0.3.0
+    repository: http://chartmuseum.moon.cloud:8080

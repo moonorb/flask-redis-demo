@@ -1,0 +1,6 @@
+dependencies:
+- name: redis-chart
+  repository: http://chartmuseum.moon.cloud:8080
+  version: 0.3.0
+digest: sha256:b4ee35bce5eeb748fc4980d9f78b2220303b4d136d6ed5b4f3ea2353ef5c55b3
+generated: "2023-04-10T01:19:45.263874155Z"

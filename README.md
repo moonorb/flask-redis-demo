@@ -1,6 +1,6 @@
 # Flask-Redis Deployment
 
-![Alt text](https://gitlab.com/moonorb/demo/-/raw/main/images/flask-redis.PNG )
+![Alt text](https://github.com/moonorb/images/blob/main/images/flask-redis.PNG )
 
 This is a super simple demo application to practice and experiment with K8s using a Python/Flask application.
 It uses a redis backend and displays the page hits.

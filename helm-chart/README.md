@@ -1,7 +1,7 @@
 # Flask-Redis Helm Chart
 
 =======
-![Alt text](https://gitlab.com/moonorb/demo/-/raw/main/images/chart_diagram.PNG )
+![Alt text](https://github.com/moonorb/images/blob/main/images/flask-redis.PNG  )
 
 - **flask-chart - Parent chart**
 - **redis-chart - Subchart(child)**

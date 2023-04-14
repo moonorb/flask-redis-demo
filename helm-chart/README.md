@@ -1,6 +1,7 @@
 # Flask-Redis Helm Chart
 
-![Alt text](https://github.com/moonorb/images/blob/main/images/chart_diagram.PNG )
+=======
+![Alt text](https://gitlab.com/moonorb/demo/-/raw/main/images/chart_diagram.PNG )
 
 - **flask-chart - Parent chart**
 - **redis-chart - Subchart(child)**
@@ -18,21 +19,18 @@ $ ./get_helm.sh
 Modify the values.yaml files if you need to. 
 Check what will be deployed before running installation
 
-Install the Chart
+### Render the template and deploy the Chart
 ```
 git clone https://gitlab.com/moonorb/flask-redis-demo.git
 cd flask-redis-demo/helm-chart/
 helm template flask-chart
-```
-
-Deploy and check the charts
-```
 kubectl create ns flask
 helm install my-flask flask-chart -n flask
 helm list -n flask
+helm list
 ```
 
-Uninstall
+### Uninstall
 ```
 helm uninstall my-flask -n flask
 ```

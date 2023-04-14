@@ -27,7 +27,6 @@ helm template flask-chart
 kubectl create ns flask
 helm install my-flask flask-chart -n flask
 helm list -n flask
-helm list
 ```
 
 ### Uninstall

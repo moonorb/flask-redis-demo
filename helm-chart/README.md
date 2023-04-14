@@ -17,7 +17,11 @@ $ ./get_helm.sh
 
 Modify the values.yaml files if you need to. 
 Check what will be deployed before running installation
+
+Install the Chart
 ```
+git clone https://gitlab.com/moonorb/flask-redis-demo.git
+cd flask-redis-demo/helm-chart/
 helm template flask-chart
 ```
 
@@ -25,7 +29,7 @@ Deploy and check the charts
 ```
 kubectl create ns flask
 helm install my-flask flask-chart -n flask
-helm list
+helm list -n flask
 ```
 
 Uninstall

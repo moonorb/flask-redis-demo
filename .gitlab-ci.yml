@@ -22,7 +22,7 @@ stages:          # List of stages for jobs, and their order of execution
 
 run_tests:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
-  image: python:3.6
+  image: python:3.10.8-slim-buster
   before_script:
     - pip install -r app/requirements.txt
   script:

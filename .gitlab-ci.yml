@@ -20,9 +20,9 @@ stages:          # List of stages for jobs, and their order of execution
   - test
 
 
-test:   # This job runs in the test stage.
+run_tests:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
-  script:
-    - echo "Running Tests....."
+  before_script:
     - pip install -r requirements
-    - pytest
+  script:
+    - python -m pytest

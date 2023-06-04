@@ -25,4 +25,4 @@ test:   # This job runs in the test stage.
   script:
     - echo "Running Tests....."
     - pytest
-    -flake 8
+    - flake 8

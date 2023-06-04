@@ -3,4 +3,3 @@ Redis
 gunicorn
 prometheus-flask-exporter
 pytest
-unittest
